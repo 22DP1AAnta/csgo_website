@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+/* BODY */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    align-content: center;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.light-theme h1 {
+    color: #333; /* Change h1 text color for light theme */
+}
+
+body.light-theme .card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .card h3 {
+    color: #333;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-theme h1 {
+    color: #f0f0f0; /* Change h1 text color for dark theme */
+}
+
+body.dark-theme .card {
+    background-color: #444;
+    border: 2px solid #666;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .card h3 {
+    color: #f0f0f0;
+}
+
+body.dark-theme .tooltip{
+    color: #f0f0f0;
+}
+
+body.light-theme .tooltip{
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    z-index: 0;
+}
+
+/* CARD */
+.card h3 {
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #333; /* Dark gray text */
+    text-decoration: none;
+    z-index: 1;
+}
+
+.card {
+    background-color: #fff; /* White background */
+    position: relative;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    height: 500px;
+    width: 300px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+/* SLIDER */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #444;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color:  #f0f0f0;;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#h_mm {
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+    color: #333; /* Dark gray text */
+    transition: color 0.3s ease-in-out;
+    margin: 0 auto; /* Center horizontally */
+}
+
+#h_mm:hover {
+    color: #e91e63; /* Pink text on hover */
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#f_mm {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+#menucards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.tooltip {
+    width: 300px;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    color: #e91e63; /* Pink text */
+}
+
+.image {
+    max-block-size: 300px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 100px;
+}
