@@ -1,0 +1,39 @@
+/* Navbar list items */
+.navbar ul li {
+    display: inline-block; /* Display list items inline */
+}
+
+/* Style the links within the navbar */
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding for better clickability */
+    border-radius: 5px; /* Add some rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    background-color: #3498db; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Toggle switch styling (you can adjust this as needed) */
+.switch {
+    margin-right: 20px; /* Add some spacing between the switch and text */
+}
+
+/* Optional: Center the switch vertically */
+.switch input[type="checkbox"] {
+    vertical-align: middle;
+}
+.hj{
+    position: absolute;
+    right: 5%;
+}
+
+.jobana_box{
+    display: flex;
+    gap: 20px;
+}

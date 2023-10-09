@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body {
+    background-color: #333;
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-container h4 {
+    font-size: 14px;
+    color: rgb(129, 129, 129);
+    margin-top: 10px;
+}
+
+.login-container a{
+    text-decoration: none;
+}
+
+.login-form h3 {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-form a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #3498db;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.login-form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #267dbf;
+}
+
+.password_box{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.email_box{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.password_box a{
+    text-decoration: none;
+    width: 100%;
+    text-align: right;
+}
+
+.remember-me{
+
+    color: rgb(129, 129, 129); ;
+    position: absolute;
+    align-items: center;
+    margin-left: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #267dbf;
+}
+
+/* Add this CSS to center the button */
+.login-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}

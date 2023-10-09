@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* BODY */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    align-content: center;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.light-theme h1 {
+    color: #333; /* Change h1 text color for light theme */
+}
+
+body.light-theme .answer {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .answer h3 {
+    color: #333;
+}
+body.light-theme .photo{
+    color: #333;
+
+}
+body.light-theme .q_title h3{
+    color: #333;
+
+}
+body.light-theme .question{
+    color: #333;
+}
+body.light-theme .remaining{
+    color: #333;
+}
+body.light-theme .score{
+    color: #333;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+
+}
+
+body.dark-theme h1 {
+    color: #f0f0f0; /* Change h1 text color for dark theme */
+}
+
+body.dark-theme .q_title h3{
+    color: #f0f0f0; /* Change h1 text color for dark theme */
+}
+
+
+body.dark-theme .answer {
+    background-color: #444;
+    border: 2px solid #666;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .answer h3 {
+    color: #f0f0f0;
+}
+body.dark-theme .photo{
+    color: #f0f0f0;
+}
+
+body.dark-theme .question_box,
+.question_remaining_box,
+.score_box {
+    color: #f0f0f0;
+}
+
+/* Light theme */
+body.light-theme .leaderboard {
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Dark text color */
+    border: 1px solid #ddd; /* Light border color */
+}
+
+body.light-theme .leaderboard h1 {
+    background-color: #1e272e; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+body.light-theme .leaderboard li {
+    background-color: #fff; /* White background color for even rows */
+}
+body.light-theme .span, .rank{
+    color: #333;
+}
+/* Dark theme */
+body.dark-theme .leaderboard {
+    background-color: #333; /* Dark background color */
+    color: #f0f0f0; /* White text color */
+    border: 1px solid #666; /* Dark border color */
+}
+
+body.dark-theme .leaderboard h1 {
+    background-color: #1e272e; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+body.dark-theme .leaderboard li {
+    background-color: #444; /* Darker background color for even rows */
+}
+
+
+body.light-theme .leaderboard .rank,
+body.light-theme .leaderboard .name {
+    color: #333;
+}
+
+body.dark-theme .leaderboard .rank,
+body.dark-theme .leaderboard .name {
+    color: #f0f0f0; /* White text color */
+}
+
+.answer {
+    background-color: #fff; /* White background */
+    position: relative;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    height: 100px;
+    width: 150px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+.answer:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+#answercard {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.photo{
+    width: 70%;
+    margin: 0 auto;
+   justify-content: center; /* Horizontally center */
+   align-items: center; /* Vertically center */
+ 
+   position: relative;
+   border: 2px solid #ddd; /* Light gray border */
+   border-radius: 5px;
+   height: 400px;
+   width: 400px;
+   transition: transform 0.3s ease;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+.image{
+    max-block-size: 396px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.q_title h3{
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+    color: #f0f0f0;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+
+}
+
+.answer h3{
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #333; /* Dark gray text */
+    text-decoration: none;
+    z-index: 1;
+}
+
+
+/* Toolbar styles */
+.toolbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+.question_box,
+.question_remaining_box,
+.score_box {
+    height: 70px;
+    width: 166.6px;
+    text-align: center;
+}
+
+.question,
+.remaining,
+.score {
+    font-size: 0.625rem;
+    color: #f0f0f0;
+}
+
+.question h3,
+.remaining h3,
+.score h3 {
+    margin-bottom: 0;
+}
+
+#question,
+#remaining,
+#score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: green;
+}
+
+/* SLIDER */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 2%;
+    z-index: 2;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #444;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color:  #f0f0f0;;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#h_mm {
+    position: absolute;
+    color: #fff; /* White text color */
+    font-size: 24px; /* Increase font size for visibility */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+    transition: color 0.3s ease-in-out;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 0; /* Remove top margin */
+}
+
+#h_mm:hover {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1{
+    margin-top: 0;
+}
+.ad-container {
+    display: flex;
+}
+
+.ad1 {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 0;
+    border: #333 2px;
+    border-right: 2px solid red;
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.ad2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    border-left: 2px solid red;
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.ad1 img,
+.ad2 img {
+    max-width: 100%;
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    top: 0;
+    height: 60px; /* Increased height for better visibility */
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: #1e272e; /* Dark background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar list */
+.container {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Center items with spacing */
+    align-items: center;
+}
+
+/* Navbar list items */
+.options{
+    display: inline-block; /* Display list items inline */
+}
+
+/* Style the links within the navbar */
+a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding for better clickability */
+    border-radius: 5px; /* Add some rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+a:hover {
+    background-color: #3498db; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Toggle switch styling (you can adjust this as needed) */
+.switch {
+    margin-right: 20px; /* Add some spacing between the switch and text */
+}
+
+/* Optional: Center the switch vertically */
+.switch input[type="checkbox"] {
+    vertical-align: middle;
+}
+.hj{
+    position: absolute;
+    right: 5%;
+}
+
+.jobana_box{
+    display: flex;
+    gap: 20px;
+}
+
+
+/* LEADERBOARD */
+.leaderboard {
+            position: absolute;
+            right: 5%;
+            width: 350px;
+            margin: 50px auto;
+            font-family: 'Josefin Sans', sans-serif; /* Apply the same font */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .leaderboard h1 {
+            background-color: #1e272e; /* Dark background color */
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .themes {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .leaderboard li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #333; /* Use a darker border color */
+        }
+
+        .leaderboard li{
+            background-color: #444; /* Darker background color for even rows */
+        }
+
+        .leaderboard .rank {
+            flex: 0 0 30px;
+            font-weight: bold;
+            color: #f0f0f0; /* White text color */
+        }
+
+        .leaderboard .name {
+            flex: 1;
+            color: #f0f0f0; /* White text color */
+        }
+
+        .leaderboard .score {
+            flex: 0 0 50px;
+            text-align: center;
+            color: #f0f0f0; /* White text color */
+        }
+
+/* THEMES */
+
